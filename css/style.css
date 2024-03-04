@@ -4,5 +4,90 @@ body{
   line-height: 24px;
   color: #163152;
   background: #FDFDFF;
+}
 
+.nav-item a{
+  font-size: 14px;
+  line-height: 18px;
+  color: #163152;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero h1{
+  /*italic подключить в html*/
+  font-style: italic;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.blog-article .datetime{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+}
+
+.blog-article h2{
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.contacts h2{
+  font-size: 24px;
+  line-height: 34px;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+}
+
+.contacts-item h3,
+.contacts-item{
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contacts-item a{
+  color: #163152;
+  text-decoration: none;
+}
+
+.contact-item address {
+  font-style: normal;
+}
+
+.main-footer{
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.main-footer .policy-footer{
+  font-size: 10px;
+  line-height: 12px;
+  color: #163152;
+  text-decoration: none;
+}
+
+.info-list h2{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.yeacht-club-item a,
+.company-item a,
+.service-item a,
+.competitions-item a{
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #163152;
 }
