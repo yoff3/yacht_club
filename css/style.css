@@ -233,3 +233,20 @@ body{
   margin: 0;
   padding: 0;
 }
+
+.news{
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.news h2{
+  margin-top: 0;
+  margin-bottom: 55px;
+}
+
+
+.winner-preview{
+  margin: 0;
+  padding:0;
+}
