@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Яхт клуб "Под парусом"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header-main">
       <nav class="nav-main">
         <p>
-          <img src="img/placeholder.svg" alt="Логотип яхт клуба Под парусом">
+          <img src="img/logo.svg" width="64" height="68" alt="Логотип яхт клуба Под парусом">
         </p>
         <ul class="nav-list">
           <li class="nav-item">
@@ -31,7 +35,7 @@
           </li>
         </ul>  
         <a href="#">
-          <img src="img/placeholder.svg" alt="Вход в личный кабинет">
+          <img src="img/user-login-icon.svg" width="16" height="18" alt="Вход в личный кабинет">
         </a>
       </nav>
     </header>
@@ -39,72 +43,104 @@
     <main>
       <section class="hero">
         <h1>Вместе под парусом</h1>
-        <img src="img/placeholder.svg" alt="Яхта на воде между гор">
+        <img src="img/promo-photo.jpg" width="1170" height="466" alt="Яхта на воде между гор">
       </section>
       
       <article class="blog-article">
-        <p><time datetime="2021-10-20">20 октября</time>-<time datetime="2021-04-19">19 апреля</time></p> 
+        <p class="datetime"><time datetime="2021-10-20">20 октября</time>-<time datetime="2021-04-19">19 апреля</time></p> 
         <h2>Стань частью команды</h2>
-        <p>Если вы давно хотели попробовать себя в яхтинге – сейчас самое лучшее время! Мы набираем команду будущих шкиперов. За 6 вы станете настоящим капитаном и уже в следующем сезоне сможете самостоятельно выйти в море!</p>
-        <img src="img/placeholder.svg" alt="Член нашей команды смотри вдаль на яхте через бинокль">
+        <p class="event-description">Если вы давно хотели попробовать себя в яхтинге – сейчас самое лучшее время! Мы набираем команду будущих шкиперов. За 6 вы станете настоящим капитаном и уже в следующем сезоне сможете самостоятельно выйти в море!</p>
+        <img src="img/instructor-on-the-boat.jpg" width="600" height="262" alt="Член нашей команды смотри вдаль на яхте через бинокль">
       </article>
 
       <article class="blog-article">
-        <p><time datetime="2021-07-16">16 июля</time> - <time datetime="2021-07-23">23 июля</time></p>
+        <p class="datetime"><time datetime="2021-07-16">16 июля</time> - <time datetime="2021-07-23">23 июля</time></p>
         <h2>Рожденные в воде</h2>
-        <p>Подарите детям настоящее приключение! День с морскими пиратами на корабле – это лучшая команда, веселые аниматоры, игры, соревнования, работа в команде и, конечно, море!</p>
-        <img src="img/placeholder.svg" alt="Дети наблюдают видами с яхты под наблюдением взрослых">
+        <p class="event-description">Подарите детям настоящее приключение! День с морскими пиратами на корабле – это лучшая команда, веселые аниматоры, игры, соревнования, работа в команде и, конечно, море!</p>
+        <img src="img/kids-on-the-boat.jpg" width="600" height="252" alt="Дети наблюдают видами с яхты под наблюдением взрослых">
       </article>
+
+      <section class="news">
+        <h2>Новости</h2>
+        <article>
+          <figure class="winner-preview">
+            <img src="img/sochi-race-week-2020-winner.jpg" width="770" height="301" alt="Фотография победителя недельного турнира в сочи 2020 года">
+            <figcaption class="winner-description">Победитель регаты шкипер Иван Кулешов</figcaption>
+          </figure>
+          <h3>Итоги регаты Sochi Race Week 2020</h3>
+          <p>Свыше сотни участников собирались на побережье Сочи, чтобы посоревноваться за главный приз. В соревнованиях приняли участие как новички, так и <del>профессионалы</del> <ins>моряки</ins>, имеющие за плечами немалый опыт. </p>
+          <p>На протяжении всего плавания нас сопровождало солнце прекрасная погода, в отдельные дни ветер до 20 узлов. Регата была прекрасно организована, 135 яхтсменов, 7 экипажей, 9 стран участниц, 4 гоночных дня, 3 дивизиона.</p>
+          <h4>Команды-участники:</h4>
+          <ul class="roaster-list">
+            <li class="roaster-item">Восток 35</li>
+            <li class="roaster-item">Fortune Sailing</li>
+            <li class="roaster-item">Сибирь</li>
+            <li class="roaster-item">Левиафан</li>
+            <li class="roaster-item">Черный лебедь</li>
+            <li class="roaster-item">White Pepper</li>
+            <li class="roaster-item">Pearl</li>
+          </ul>
+          <p>Чемпионом регаты Sochi Race Week 2020 стала команда Fortune Sailing, в прошлом году остановившаяся в одном шаге от победы, а в этом сезоне опередившая ближайшего соперника — экипаж «Восток 35» — на <del>12 баллов</del> <ins>5 баллов</ins>.</p>
+          <blockquote class="winner-quote">Мы в команде очень дружны и понимаем друг друга без слов, думаю, поэтому мы и победили</blockquote>
+          <p>Поздравляем победителей и ждем все участников снова на осенних регатах! </p>
+          <img src="img/author.png" width="60" height="60" alt="Фотография автора статьи Артема Колесникова">
+          <p class="article-author">Артем Колесников</p>
+          <p><time datetime="2021-06-20">20.06.2021</time></p>
+          <a href="#">
+            <img src="img/share icon.svg" width="26" height="22" alt="Иконка поделиться">
+          </a>
+        </article>        
+      </section>
 
       <section class="contacts">
         <h2>Контакты</h2>
         <ul class="contacts-list">
           <li class="contacts-item">
             <h3>Адрес:</h3>
-            <p><em>г. Сочи, ул. Бзугу, 9</em></p>
+            <address>г. Сочи, ул. Бзугу, 9</address>
           </li>
           <li class="contacts-item">
             <h3>Телефон:</h3>
-            <p><a href="tel:8622620563" >8 (622) 62-05-63</a></p>
+            <a href="tel:8622620563" >8 (622) 62-05-63</a>
           </li>
           <li class="contacts-item">
             <h3>E-mail:</h3>
-            <p><a href="mailto:yachtclub-sochi@mail.ru">yachtclub-sochi@mail.ru</a></p>
+            <a href="mailto:yachtclub-sochi@mail.ru">yachtclub-sochi@mail.ru</a>
           </li>
           <li class="contacts-item">
-            <ul class="socials-list">
-              <h3>Мы в социальных сетях:</h3>
+            <h3>Мы в социальных сетях:</h3>
+            <ul class="socials-list">              
               <li class="socials-item">
                 <a href="">
-                  <img src="img/placeholder.svg" alt="Facebook">
+                  <img src="img/facebook.svg" width="9" height="16" alt="Facebook">
                 </a>
               </li>
               <li class="socials-item">
                 <a href="">
-                  <img src="img/placeholder.svg" alt="Twitter">
+                  <img src="img/twitter.svg" width="18" height="16" alt="Twitter">
                 </a>
               </li>
               <li class="socials-item">
                 <a href="">
-                  <img src="img/placeholder.svg" alt="Instagram">
+                  <img src="img/instagram.svg" width="18" height="16" alt="Instagram">
                 </a>
               </li>
             </ul>  
           </li>
         </ul>
-        <img src="img/placeholder.svg" alt="Фото карты где расположен яхт клуб Под парусом">
+        <img src="img/map.png" width="670" height="351" alt="Фото карты где расположен яхт клуб Под парусом">
       </section>
     </main>
 
     <footer class="main-footer">
-      <img src="img/placeholder.svg" alt="Логотип яхт клуба Под парусом">
-      <p><a href="#">Политика конфиденциальности</a></p>
+      <img src="img/logo.svg" width="100" height="106" alt="Логотип яхт клуба Под парусом">
+      <p><a class="policy-footer" href="#">Политика конфиденциальности</a></p>
       <p>Яхтклуб ©2020 Все права защищены</p>
 
       <ul class="info-list">
         <li class="company">
           <h2>Компания</h2>
-          <ul class="">
+          <ul class="company-list">
             <li class="company-item">
               <a href="#">О нас</a>
             </li>

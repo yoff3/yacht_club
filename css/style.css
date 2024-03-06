@@ -1,0 +1,148 @@
+body{
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #163152;
+  background: #FDFDFF;
+}
+
+.nav-item a{
+  font-size: 14px;
+  line-height: 18px;
+  color: #163152;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero h1{
+  /*italic подключить в html*/
+  font-style: italic;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.blog-article .datetime{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.blog-article h2{
+  font-size: 24px;
+  line-height: 34px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+}
+
+.contacts h2{
+  font-size: 24px;
+  line-height: 34px;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+}
+
+.contacts-item h3,
+.contacts-item{
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.contacts-item a{
+  color: #163152;
+  text-decoration: none;
+}
+
+.contact-item address {
+  font-style: normal;
+}
+
+.main-footer{
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.main-footer .policy-footer{
+  font-size: 10px;
+  line-height: 12px;
+  color: #163152;
+  text-decoration: none;
+}
+
+.info-list h2{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.yeacht-club-item a,
+.company-item a,
+.service-item a,
+.competitions-item a{
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #163152;
+}
+
+.news h2{
+  font-size: 24px;
+  line-height: 34px;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+  text-align: center;
+}
+
+.winner-description{
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8693A4;
+}
+
+.news h3{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.news h3::nth-child(2){
+  font-size: 20px;
+}
+
+.news p,
+.news .roaster-item{
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.winner-quote{
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 700;
+  border-left: 2px solid #00c6bd;
+  padding-left: 15px;
+  margin-left: 0;
+}
+
+.article-author{
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+.news time{
+  font-size: 16px;
+  line-height: 19px;
+  color: #8693A4;
+}
