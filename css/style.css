@@ -1,4 +1,6 @@
 body{
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -145,4 +147,45 @@ body{
   font-size: 16px;
   line-height: 19px;
   color: #8693A4;
+}
+
+.header-main{
+  width: 1170px;
+  margin: 0 auto; 
+  padding: 20px 55px;
+  margin-bottom: 40px;
+}
+
+.nav-main{
+  display: flex;
+}
+
+.logo{
+  margin: 0;
+  width: 64px;
+}
+
+.nav-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 559px;
+  margin-left: auto;
+}
+
+.account{
+  width: 36px;
+  margin-left: 40px;
+}
+
+.main-content{
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+.main-footer{
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 55px;
 }
