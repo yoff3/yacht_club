@@ -1,4 +1,6 @@
 body{
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -32,7 +34,6 @@ body{
 .blog-article h2{
   font-size: 24px;
   line-height: 34px;
-  text-transform: uppercase;
   text-decoration: underline;
   text-decoration-color: #00c6bd;
   text-decoration-thickness: 2px;
@@ -145,4 +146,171 @@ body{
   font-size: 16px;
   line-height: 19px;
   color: #8693A4;
+}
+
+.header-main{
+  width: 1170px;
+  margin: 0 auto; 
+  padding: 20px 55px;
+  margin-bottom: 40px;
+}
+
+.nav-main{
+  display: flex;
+}
+
+.logo{
+  margin: 0;
+  width: 64px;
+}
+
+.nav-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 559px;
+  margin-left: auto;
+}
+
+.account{
+  width: 36px;
+  margin-left: 40px;
+}
+
+.main-content{
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+.hero{
+  margin-bottom: 120px;
+}
+
+.hero h1{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.blog-article{
+  margin: 0 auto;
+  width: 1030px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-article-1{
+  margin-bottom: 100px;
+}
+
+.blog-article-2{
+  margin-bottom: 120px;
+  flex-direction: row-reverse;
+}
+
+.blog-article-container{
+  width: 400px;
+  
+}
+
+.blog-article-container img{
+  width: 600px;
+}
+
+.blog-article h2{
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.blog-article-container p{
+  margin: 0;
+  padding: 0;
+}
+
+.news{
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  /*согласно макету margin-bottom: 120px; на проверку подошло 80*/
+}
+
+.news h2{
+  margin-top: 0;
+  margin-bottom: 55px;
+}
+
+
+.winner-preview{
+  margin: 0;
+  padding:0;
+}
+
+.contacts{
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.map-img{
+  width: 670px;
+  margin-right: 120px;
+}
+
+.contacts-info{
+  width: 100%;
+}
+
+.main-footer{
+  width: 1280px;
+  margin: 0 auto;
+  margin-top: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-wrapper{
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo-wrapper{
+  width: 175px;
+}
+
+.footer-logo-wrapper .footer-logo{
+  width: 100px;
+}
+
+.info-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  
+  width: 870px;
+}
+
+.info-list-item{
+  width: 165px;
+}
+
+.info-list-item:last-child{
+  margin-right: 0;
+}
+
+.info-list-item ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-list-item h2{
+  margin-top: 0;
+  margin-bottom: 20px;
 }
