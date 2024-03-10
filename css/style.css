@@ -32,6 +32,10 @@ body{
   height: 18px;
 }
 
+.hero{
+  margin-bottom: 120px;
+}
+
 .hero h1{
   /*italic подключить в html*/
   font-style: italic;
@@ -39,6 +43,13 @@ body{
   font-size: 44px;
   line-height: 60px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.hero img{
+  display: block;
 }
 
 .blog-article .datetime{
@@ -240,16 +251,6 @@ body{
   width: 1170px;
   margin: 0 auto;
   padding: 0 55px;
-}
-
-.hero{
-  margin-bottom: 120px;
-}
-
-.hero h1{
-  margin: 0;
-  padding: 0;
-  margin-bottom: 40px;
 }
 
 .blog-article{
