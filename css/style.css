@@ -16,6 +16,22 @@ body{
   text-transform: uppercase;
 }
 
+.account{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  border: 1px solid #00C6BD;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.account img{
+  width: 16px;
+  height: 18px;
+}
+
 .hero h1{
   /*italic подключить в html*/
   font-style: italic;
@@ -202,6 +218,7 @@ body{
 
 .nav-main{
   display: flex;
+  align-items: center;
 }
 
 .logo{
@@ -215,11 +232,8 @@ body{
   list-style: none;
   width: 559px;
   margin-left: auto;
-}
-
-.account{
-  width: 36px;
-  margin-left: 40px;
+  display: flex;
+  gap: 30px;
 }
 
 .main-content{
