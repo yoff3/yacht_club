@@ -100,6 +100,8 @@ body{
 }
 
 
+
+
 .contacts h2{
   font-size: 24px;
   line-height: 34px;
@@ -153,17 +155,6 @@ body{
   color: #163152;
 }
 
-.news h2{
-  font-size: 24px;
-  line-height: 34px;
-  text-decoration: underline;
-  text-decoration-color: #00c6bd;
-  text-underline-offset: 15px;
-  text-underline-position: under;
-  text-decoration-thickness: 2px;
-  text-align: center;
-}
-
 .winner-description{
   font-style: normal;
   font-size: 16px;
@@ -171,28 +162,10 @@ body{
   color: #8693A4;
 }
 
-.news h3{
-  font-size: 22px;
-  line-height: 26px;
-}
-
-.news h3::nth-child(2){
-  font-size: 20px;
-}
-
 .news p,
 .news .roaster-item{
   font-size: 18px;
   line-height: 26px;
-}
-
-.winner-quote{
-  font-size: 26px;
-  line-height: 36px;
-  font-weight: 700;
-  border-left: 2px solid #00c6bd;
-  padding-left: 15px;
-  margin-left: 0;
 }
 
 .article-author{
@@ -275,6 +248,131 @@ body{
   background-color: transparent;
 }
 
+.article-preview img{
+  margin-bottom: 17px;
+  display: block;
+}
+
+.article-preview{
+  margin: 0;
+  padding:0;
+}
+/*
+.news-article h3{
+  margin-top: 33px;
+  margin-bottom: 27px;
+}*/
+
+.news{
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  /*согласно макету margin-bottom: 120px; на проверку подошло 80*/
+}
+
+.news h2{
+  margin-top: 0;
+  margin-bottom: 55px;
+  font-size: 24px;
+  line-height: 34px;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+  text-align: center;
+}
+
+.news h3{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.news h3::nth-child(2){
+  font-size: 20px;
+}
+
+.news-article p{
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.news-article h3{
+  margin-top: 33px;
+  font-weight: bold;
+  margin-bottom: 27px;
+}
+
+.news h4{
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+.roaster-list{
+  padding:0;
+  margin: 0;
+  padding-left: 19px;
+  margin-bottom: 30px;
+}
+
+.roaster-list-item{
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+
+.roaster-list-item:first-child{
+  margin-top: 15px;
+}
+
+.article-quote{
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 700;
+  border-left: 2px solid #00c6bd;
+  padding-left: 15px;
+  margin-left: 0;
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+
+.author{
+  width: 770px;
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+.author-info{
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+.author-info p{
+  margin: 0;
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.author-info p:last-child{
+  margin-bottom: 0;
+}
+
+.author-img{
+  width: 60px;
+  height: 60px;
+}
+
+.author .share{
+  display: block;
+  width: 26px;
+  height: 22px;
+}
+
+
 .header-main{
   width: 1170px;
   margin: 0 auto; 
@@ -306,24 +404,6 @@ body{
   width: 1170px;
   margin: 0 auto;
   padding: 0 55px;
-}
-
-.news{
-  width: 770px;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  /*согласно макету margin-bottom: 120px; на проверку подошло 80*/
-}
-
-.news h2{
-  margin-top: 0;
-  margin-bottom: 55px;
-}
-
-
-.winner-preview{
-  margin: 0;
-  padding:0;
 }
 
 .contacts{
