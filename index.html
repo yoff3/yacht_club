@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/outline.css" rel="stylesheet">
-    <link href="css/outline-settings.css" rel="stylesheet">
+    <!--<link href="css/outline.css" rel="stylesheet">
+    <link href="css/outline-settings.css" rel="stylesheet">-->
   </head>
   <body>
     <header class="header-main">
@@ -77,15 +77,17 @@
               </a>
             </li>
             <li class="gallery-list-item">
-              <a href="#"><img src="img/gallery photo 3.jpg"  width="170" height="150" alt="Фронтальное изображение яхты 2">
-              </a>
-            </li>
-            <li class="gallery-list-item">
-              <a href="#"><img src="img/gallery photo 4.jpg"  width="170" height="150" alt="Капитаны на яхте">
+              <a href="#">
+                <img src="img/gallery photo 3.jpg"  width="170" height="150" alt="Фронтальное изображение яхты 2">
               </a>
             </li>
             <li class="gallery-list-item">
               <a href="#">
+                <img src="img/gallery photo 4.jpg"  width="170" height="150" alt="Капитаны на яхте">
+              </a>
+            </li>
+            <li class="gallery-list-item">
+              <a href="#" class="active">
                 <img src="img/gallery photo 5.jpg"  width="170" height="150" alt="Парусная лодка на воде">
               </a>
             </li>
@@ -95,8 +97,8 @@
 
       <section class="news">
         <h2>Новости</h2>
-        <article>
-          <figure class="winner-preview">
+        <article class="news-article">
+          <figure class="article-preview">
             <img src="img/sochi-race-week-2020-winner.jpg" width="770" height="301" alt="Фотография победителя недельного турнира в сочи 2020 года">
             <figcaption class="winner-description">Победитель регаты шкипер Иван Кулешов</figcaption>
           </figure>
@@ -105,23 +107,28 @@
           <p>На протяжении всего плавания нас сопровождало солнце прекрасная погода, в отдельные дни ветер до 20 узлов. Регата была прекрасно организована, 135 яхтсменов, 7 экипажей, 9 стран участниц, 4 гоночных дня, 3 дивизиона.</p>
           <h4>Команды-участники:</h4>
           <ul class="roaster-list">
-            <li class="roaster-item">Восток 35</li>
-            <li class="roaster-item">Fortune Sailing</li>
-            <li class="roaster-item">Сибирь</li>
-            <li class="roaster-item">Левиафан</li>
-            <li class="roaster-item">Черный лебедь</li>
-            <li class="roaster-item">White Pepper</li>
-            <li class="roaster-item">Pearl</li>
+            <li class="roaster-list-item">Восток 35</li>
+            <li class="roaster-list-item">Fortune Sailing</li>
+            <li class="roaster-list-item">Сибирь</li>
+            <li class="roaster-list-item">Левиафан</li>
+            <li class="roaster-list-item">Черный лебедь</li>
+            <li class="roaster-list-item">White Pepper</li>
+            <li class="roaster-list-item">Pearl</li>
           </ul>
           <p>Чемпионом регаты Sochi Race Week 2020 стала команда Fortune Sailing, в прошлом году остановившаяся в одном шаге от победы, а в этом сезоне опередившая ближайшего соперника — экипаж «Восток 35» — на <del>12 баллов</del> <ins>5 баллов</ins>.</p>
-          <blockquote class="winner-quote">Мы в команде очень дружны и понимаем друг друга без слов, думаю, поэтому мы и победили</blockquote>
+          <blockquote class="article-quote">Мы в команде очень дружны и понимаем друг друга без слов, думаю, поэтому мы и победили</blockquote>
           <p>Поздравляем победителей и ждем все участников снова на осенних регатах! </p>
-          <img src="img/author.png" width="60" height="60" alt="Фотография автора статьи Артема Колесникова">
-          <p class="article-author">Артем Колесников</p>
-          <p><time datetime="2021-06-20">20.06.2021</time></p>
-          <a href="#">
-            <img src="img/share icon.svg" width="26" height="22" alt="Иконка поделиться">
-          </a>
+          
+          <footer class="author">
+            <img class="author-img" src="img/author.png" width="60" height="60" alt="Фотография автора статьи Артема Колесникова">
+            <div class="author-info">
+              <p class="article-author">Артем Колесников</p>
+              <p><time datetime="2021-06-20">20.06.2021</time></p>
+            </div>
+            <a href="#" class="share">
+              <img src="img/share icon.svg" width="26" height="22" alt="Иконка поделиться">
+            </a>
+          </footer>
         </article>        
       </section>
 
@@ -145,17 +152,17 @@
               <h3>Мы в социальных сетях:</h3>
               <ul class="socials-list">              
                 <li class="socials-item">
-                  <a href="">
+                  <a href="#">
                     <img src="img/facebook.svg" width="9" height="16" alt="Facebook">
                   </a>
                 </li>
                 <li class="socials-item">
-                  <a href="">
+                  <a href="#">
                     <img src="img/twitter.svg" width="18" height="16" alt="Twitter">
                   </a>
                 </li>
                 <li class="socials-item">
-                  <a href="">
+                  <a href="#">
                     <img src="img/instagram.svg" width="18" height="16" alt="Instagram">
                   </a>
                 </li>
@@ -177,80 +184,80 @@
         <ul class="info-list">
           <li class="company info-list-item">
             <h2>Компания</h2>
-            <ul class="company-list">
-              <li class="company-item">
+            <ul class="company-list footer-nav-list">
+              <li class="company-item footer-nav-item">
                 <a href="#">О нас</a>
               </li>
-              <li class="company-item">
+              <li class="company-item footer-nav-item">
                 <a href="#">Команда</a>
               </li>
-              <li class="company-item">
+              <li class="company-item footer-nav-item">
                 <a href="#">Новости</a>
               </li>
-              <li class="company-item">
+              <li class="company-item footer-nav-item">
                 <a href="#">Блог</a>
               </li>
-              <li class="company-item">
+              <li class="company-item footer-nav-item">
                 <a href="#">Галерея</a>
               </li>
             </ul>
           </li>
           <li class="yacht-club info-list-item">
             <h2>Яхт-клуб</h2>
-            <ul class="yacht-club-list">
-              <li class="yeacht-club-item">
+            <ul class="yacht-club-list footer-nav-list">
+              <li class="yeacht-club-item footer-nav-item">
                 <a href="#">Правила</a>
               </li>
-              <li class="yeacht-club-item">
+              <li class="yeacht-club-item footer-nav-item">
                 <a href="#">Стоимость</a>
               </li>
-              <li class="yeacht-club-item">
+              <li class="yeacht-club-item footer-nav-item">
                 <a href="#">Анкета</a>
               </li>
-              <li class="yeacht-club-item">
+              <li class="yeacht-club-item footer-nav-item">
                 <a href="#">FAQ</a>
               </li>
-              <li class="yeacht-club-item">
+              <li class="yeacht-club-item footer-nav-item">
                 <a href="#">Партнеры</a>
               </li>
             </ul>
           </li>
           <li class="service info-list-item">
             <h2>Услуги</h2>
-            <ul class="service-list">
-              <li class="service-item">
+            <ul class="service-list footer-nav-list">
+              <li class="service-item footer-nav-item">
                 <a href="#">Аренда яхты</a>
               </li>
-              <li class="service-item">
+              <li class="service-item footer-nav-item">
                 <a href="#">Свадьба на яхте</a>
               </li>
-              <li class="service-item">
+              <li class="service-item footer-nav-item">
                 <a href="#">День рождения</a>
               </li>
-              <li class="service-item">
+              <li class="service-item footer-nav-item">
                 <a href="#">Бизнес-встречи</a>
               </li>
-              <li class="service-item">
+              <li class="service-item footer-nav-item">
                 <a href="#">Прогулки</a>
               </li>
             </ul>
           </li>
           <li class="competitions info-list-item">
             <h2>Регаты</h2>
-            <ul class="competitions-list">
-              <li class="competitions-item">
+            <ul class="competitions-list footer-nav-list">
+              <li class="competitions-item footer-nav-item">
                 <a href="#">Корпоративные регаты</a>
               </li>
-              <li class="competitions-item">
+              <li class="competitions-item footer-nav-item">
                 <a href="#">Календарь мероприятий</a>
               </li>
-              <li class="competitions-item">
+              <li class="competitions-item footer-nav-item">
                 <a href="#">Стать участником</a>
               </li>
-              <li class="competitions-item">
+              <li class="competitions-item footer-nav-item">
                 <a href="#">Результаты регат</a>
               </li>
-              <li class="competitions-item">
+              <li class="competitions-item footer-nav-item">
                 <a href="#">Обучение</a>
               </li>
             </ul>

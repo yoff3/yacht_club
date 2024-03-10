@@ -16,13 +16,46 @@ body{
   text-transform: uppercase;
 }
 
+.account{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  border: 1px solid #00C6BD;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.account img{
+  width: 16px;
+  height: 18px;
+}
+
+.hero{
+  margin-bottom: 120px;
+}
+
 .hero h1{
-  /*italic подключить в html*/
   font-style: italic;
   font-weight: normal;
   font-size: 44px;
   line-height: 60px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.hero img{
+  display: block;
+}
+
+.blog-article{
+  margin: 0 auto;
+  width: 1030px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .blog-article .datetime{
@@ -39,31 +72,31 @@ body{
   text-decoration-thickness: 2px;
   text-underline-offset: 15px;
   text-underline-position: under;
+  margin-top: 10px;
+  margin-bottom: 35px;
 }
 
-.contacts h2{
-  font-size: 24px;
-  line-height: 34px;
-  text-decoration: underline;
-  text-decoration-color: #00c6bd;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 15px;
-  text-underline-position: under;
+.blog-article-1{
+  margin-bottom: 100px;
 }
 
-.contacts-item h3,
-.contacts-item{
-  font-size: 16px;
-  line-height: 22px;
+.blog-article-2{
+  margin-bottom: 120px;
+  flex-direction: row-reverse;
 }
 
-.contacts-item a{
-  color: #163152;
-  text-decoration: none;
+.blog-article-container{
+  width: 400px;
+  
 }
 
-.contact-item address {
-  font-style: normal;
+.blog-article-container img{
+  width: 600px;
+}
+
+.blog-article-container p{
+  margin: 0;
+  padding: 0;
 }
 
 .main-footer{
@@ -94,17 +127,6 @@ body{
   color: #163152;
 }
 
-.news h2{
-  font-size: 24px;
-  line-height: 34px;
-  text-decoration: underline;
-  text-decoration-color: #00c6bd;
-  text-underline-offset: 15px;
-  text-underline-position: under;
-  text-decoration-thickness: 2px;
-  text-align: center;
-}
-
 .winner-description{
   font-style: normal;
   font-size: 16px;
@@ -112,28 +134,10 @@ body{
   color: #8693A4;
 }
 
-.news h3{
-  font-size: 22px;
-  line-height: 26px;
-}
-
-.news h3::nth-child(2){
-  font-size: 20px;
-}
-
 .news p,
 .news .roaster-item{
   font-size: 18px;
   line-height: 26px;
-}
-
-.winner-quote{
-  font-size: 26px;
-  line-height: 36px;
-  font-weight: 700;
-  border-left: 2px solid #00c6bd;
-  padding-left: 15px;
-  margin-left: 0;
 }
 
 .article-author{
@@ -193,6 +197,154 @@ body{
   margin-bottom: 0;
 }
 
+.gallery-list-item a{
+  display: block;
+  position: relative;
+}
+
+.gallery-list img {
+  display: block;
+ } 
+
+.gallery-list-item a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 253, 255, 0.5);
+}
+
+.gallery-list a.active::before{
+  background-color: transparent;
+}
+
+.article-preview img{
+  margin-bottom: 17px;
+  display: block;
+}
+
+.article-preview{
+  margin: 0;
+  padding:0;
+}
+/*
+.news-article h3{
+  margin-top: 33px;
+  margin-bottom: 27px;
+}*/
+
+.news{
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  /*согласно макету margin-bottom: 120px; на проверку подошло 80*/
+}
+
+.news h2{
+  margin-top: 0;
+  margin-bottom: 55px;
+  font-size: 24px;
+  line-height: 34px;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+  text-align: center;
+}
+
+.news h3{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.news h3::nth-child(2){
+  font-size: 20px;
+}
+
+.news-article p{
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.news-article h3{
+  margin-top: 33px;
+  font-weight: bold;
+  margin-bottom: 27px;
+}
+
+.news h4{
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 24px;
+  margin-bottom: 15px;
+}
+
+.roaster-list{
+  padding:0;
+  margin: 0;
+  padding-left: 19px;
+  margin-bottom: 30px;
+}
+
+.roaster-list-item{
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+
+.roaster-list-item:first-child{
+  margin-top: 15px;
+}
+
+.article-quote{
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 700;
+  border-left: 2px solid #00c6bd;
+  padding-left: 15px;
+  margin-left: 0;
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+
+.author{
+  width: 770px;
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+.author-info{
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+.author-info p{
+  margin: 0;
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.author-info p:last-child{
+  margin-bottom: 0;
+}
+
+.author-img{
+  width: 60px;
+  height: 60px;
+}
+
+.author .share{
+  display: block;
+  width: 26px;
+  height: 22px;
+}
+
+
 .header-main{
   width: 1170px;
   margin: 0 auto; 
@@ -202,6 +354,7 @@ body{
 
 .nav-main{
   display: flex;
+  align-items: center;
 }
 
 .logo{
@@ -215,11 +368,8 @@ body{
   list-style: none;
   width: 559px;
   margin-left: auto;
-}
-
-.account{
-  width: 36px;
-  margin-left: 40px;
+  display: flex;
+  gap: 30px;
 }
 
 .main-content{
@@ -228,67 +378,30 @@ body{
   padding: 0 55px;
 }
 
-.hero{
-  margin-bottom: 120px;
-}
-
-.hero h1{
-  margin: 0;
-  padding: 0;
-  margin-bottom: 40px;
-}
-
-.blog-article{
-  margin: 0 auto;
-  width: 1030px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.blog-article-1{
-  margin-bottom: 100px;
-}
-
-.blog-article-2{
-  margin-bottom: 120px;
-  flex-direction: row-reverse;
-}
-
-.blog-article-container{
-  width: 400px;
-  
-}
-
-.blog-article-container img{
-  width: 600px;
-}
-
-.blog-article h2{
-  margin-top: 10px;
+.contacts h2{
+  font-size: 24px;
+  line-height: 34px;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  text-underline-position: under;
   margin-bottom: 35px;
 }
 
-.blog-article-container p{
-  margin: 0;
-  padding: 0;
+.contacts-item h3,
+.contacts-item{
+  font-size: 16px;
+  line-height: 22px;
 }
 
-.news{
-  width: 770px;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  /*согласно макету margin-bottom: 120px; на проверку подошло 80*/
+.contacts-item a{
+  color: #163152;
+  text-decoration: none;
 }
 
-.news h2{
-  margin-top: 0;
-  margin-bottom: 55px;
-}
-
-
-.winner-preview{
-  margin: 0;
-  padding:0;
+.contact-item address {
+  font-style: normal;
 }
 
 .contacts{
@@ -296,15 +409,65 @@ body{
   margin: 0 auto;
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
 }
 
 .map-img{
   width: 670px;
   margin-right: 120px;
+  display: block;
 }
 
 .contacts-info{
   width: 100%;
+  
+}
+
+.contacts-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+
+.contacts-list h3{
+  margin: 0;
+}
+
+.contacts-item{
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.contacts-item:last-child{
+  display: block;
+}
+
+.contacts .socials-list{
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.contacts .socials-item a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: #FFFFFF;
+  border: 1px solid #00C6BD;
+  border-radius: 50%;
+}
+
+.contacts-list address{
+  font-style: normal;
 }
 
 .main-footer{
@@ -329,6 +492,28 @@ body{
 
 .footer-logo-wrapper .footer-logo{
   width: 100px;
+}
+
+.footer-logo{
+  display: block;
+  margin-bottom: 30px;
+}
+
+.footer-logo-wrapper p{
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.footer-logo-wrapper p:last-child{
+  margin-bottom: 0;
+}
+
+.footer-nav-item{
+  margin-bottom: 12px;
+}
+
+.footer-nav-item:last-child{
+  margin-bottom: 0;
 }
 
 .info-list{
