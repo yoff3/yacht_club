@@ -494,6 +494,28 @@ body{
   width: 100px;
 }
 
+.footer-logo{
+  display: block;
+  margin-bottom: 30px;
+}
+
+.footer-logo-wrapper p{
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.footer-logo-wrapper p:last-child{
+  margin-bottom: 0;
+}
+
+.footer-nav-item{
+  margin-bottom: 12px;
+}
+
+.footer-nav-item:last-child{
+  margin-bottom: 0;
+}
+
 .info-list{
   margin: 0;
   padding: 0;
