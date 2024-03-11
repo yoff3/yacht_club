@@ -152,6 +152,95 @@ body{
   color: #8693A4;
 }
 
+.rent{
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.rent h2{
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 0;
+  margin-bottom: 55px;
+
+  text-decoration: underline;
+  text-decoration-color: #00C6BD;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+}
+
+.rent-item-img{
+  width: 310px;
+  display: block;
+  margin-bottom: 21px;
+}
+
+.rent-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rent-item h3{
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 18px;
+  max-width: 310px;
+
+  margin-top: 21px;
+  margin-bottom: 18px;
+}
+
+.rent-item p{
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 310px;
+  margin: 15px 0;  
+}
+
+.rent-item{
+  width: 310px;
+  padding: 30px;
+  box-shadow: 0 4px 30px rgba(22, 49, 82, 0.12);
+}
+
+.specification-list{
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 29px;
+  margin-left: 18px;
+  list-style-type: disc;
+}
+
+.specification-item{
+  font-size: 14px;
+  line-height: 19px;
+  max-width: 292px;
+  margin-bottom: 4px;
+}
+
+.specification-item:last-child{
+  margin-bottom: 0;
+}
+
+.price-info{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.price-info span{
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .gallery{
   width: 1170px;
   margin: 0 auto;
