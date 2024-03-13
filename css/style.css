@@ -185,12 +185,6 @@ body{
   opacity: 0.3;
 }
 
-/* Выделение активной кнопки */
-
-.active {
-  background-color: #00c6bd;
-  color: #fdfdff;
-}
 
 .nav-item a{
   font-size: 14px;
@@ -283,6 +277,16 @@ body{
   padding: 0;
 }
 
+.blog-article.short .blog-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blog-article.short .more {
+  display: inline-block;
+}
+
 .more {
   padding: 0;
   font-family: inherit;
@@ -305,14 +309,203 @@ body{
   opacity: 0.3;
 }
 
-.blog-article.short .blog-description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.rent{
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 120px;
 }
 
-.blog-article.short .more {
-  display: inline-block;
+.rent header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.rent h2{
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 0;
+  margin-bottom: 55px;
+
+  text-decoration: underline;
+  text-decoration-color: #00C6BD;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+}
+
+.rent-item-img{
+  width: 310px;
+  display: block;
+  margin-bottom: 21px;
+}
+
+.rent-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rent-item h3{
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 18px;
+  max-width: 310px;
+
+  margin-top: 21px;
+  margin-bottom: 18px;
+}
+
+.rent-item p{
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 310px;
+  margin: 15px 0;  
+}
+
+.rent-item{
+  width: 310px;
+  padding: 30px;
+  box-shadow: 0 4px 30px rgba(22, 49, 82, 0.12);
+}
+
+.specification-list{
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 29px;
+  margin-left: 18px;
+  list-style-type: disc;
+}
+
+.specification-item{
+  font-size: 14px;
+  line-height: 19px;
+  max-width: 292px;
+  margin-bottom: 4px;
+}
+
+.specification-item:last-child{
+  margin-bottom: 0;
+}
+
+.price-info{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.price-info span{
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card-view-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+  list-style: none;
+}
+
+.card-view-button-grid {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../img/grid.svg");
+  border: 1px solid #00c6bd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-view-button-grid:hover {
+  opacity: 0.5;
+}
+
+.card-view-button-grid:active {
+  opacity: 0.3;
+}
+
+.card-view-button-grid.active {
+  background-image: url("../img/grid-light.svg");
+}
+
+.card-view-button-list {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../img/list.svg");
+  border: 1px solid #00c6bd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-view-button-list:hover {
+  opacity: 0.5;
+}
+
+.card-view-button-list:active {
+  opacity: 0.3;
+}
+
+.card-view-button-list.active {
+  background-image: url("../img/list-light.svg");
+}
+
+/* Вертикальная раскладка карточек списком */
+
+.rent-list.list {
+  flex-direction: column;
+}
+
+.rent-list.list .rent-item {
+  display: flex;
+  width: 1110px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.rent-list.list .rent-item-img {
+  width: 340px;
+  height: 211px;
+  margin: 0;
+  margin-right: 30px;
+  object-fit: cover;
+}
+
+.rent-list.list .rent-item-title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.rent-list.list .specification-list {
+  margin: 0;
+  margin-left: 18px;
+}
+
+.rent-list.list .rent-item-content {
+  margin-right: auto;
+  max-width: 345px;
+}
+
+.rent-list.list .price-info {
+  margin: 0;
+}
+
+.rent-list.list .card-price-name {
+  display: none;
 }
 
 .main-footer{
@@ -761,4 +954,9 @@ body{
   margin-bottom: 20px;
 }
 
+/* Выделение активной кнопки */
 
+.active {
+  background-color: #00c6bd;
+  color: #fdfdff;
+}
