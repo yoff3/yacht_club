@@ -283,6 +283,38 @@ body{
   padding: 0;
 }
 
+.more {
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration-line: underline;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+.more:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.more:active {
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.blog-article.short .blog-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blog-article.short .more {
+  display: inline-block;
+}
+
 .main-footer{
   font-size: 10px;
   line-height: 12px;
