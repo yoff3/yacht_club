@@ -27,3 +27,11 @@ sansSerifFont.onclick = function(){
   sansSerifFont.classList.add('active');
   mainPage.classList.remove('serif');
 };
+
+// раздел статей
+for(let blogArticle of blogArticles){
+  let moreButton = blogArticle.querySelector('.more');
+  moreButton.onclick = function(){
+    blogArticle.classList.remove('short');
+  };
+};
