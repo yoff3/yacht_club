@@ -32,6 +32,14 @@ body{
   height: 18px;
 }
 
+.account:hover{
+  opacity: 0.5;
+}
+
+.account:active{
+  opacity: 0.3;
+}
+
 .hero{
   margin-bottom: 120px;
 }
@@ -591,6 +599,13 @@ body{
   height: 22px;
 }
 
+.author .share:hover{
+  opacity: 0.5;
+}
+
+.author .share:active{
+  opacity: 0.3;
+}
 
 .header-main{
   width: 1170px;
@@ -617,6 +632,16 @@ body{
   margin-left: auto;
   display: flex;
   gap: 30px;
+}
+
+.nav-list a:hover,
+.footer-nav-list a:hover{
+  color: rgba(22, 49, 82, 0.5);
+}
+
+.nav-list a:active,
+.footer-nav-list a:active{
+  color: rgba(22, 49, 82, 0.3);
 }
 
 .main-content{
@@ -710,6 +735,14 @@ body{
   height: 38px;
   border: 1px solid #00C6BD;
   border-radius: 50%;
+}
+
+.contacts .socials-item a:hover{
+  opacity: 0.5;
+}
+
+.contacts .socials-item a:active{
+  opacity: 0.3;
 }
 
 .contacts-list address{
