@@ -49,3 +49,18 @@ cardViewList.onclick = function() {
   cardViewList.classList.add('active');
   rentCards.classList.add('list');
 };
+
+//галерея
+let mainGalleryImage = document.querySelector('.gallery-main-img');
+let galleryImages = document.querySelectorAll('.gallery-list a');
+
+for(let galleryImage of galleryImages){
+  galleryImage.onclick = function(evt) {
+    evt.preventDefault();
+
+    let currentActiveImage = document.querySelector('.active-item');
+    mainGalleryImage.src = galleryImage.href;
+    galleryImage.classList.add('active-item');
+    currentActiveImage.classList.remove('active-item');
+  };
+};
