@@ -2,7 +2,17 @@ let darkTheme = document.querySelector('.theme-button-dark');
 let lightTheme = document.querySelector('.theme-button-light');
 let mainPage = document.querySelector('.page');
 
-/*Шрифты и тема*/
+let serifFont = document.querySelector('.font-button-serif');
+let sansSerifFont = document.querySelector('.font-button-sans-serif');
+
+let blogArticles = document.querySelectorAll('.blog-article.short');
+
+let cardViewGrid = document.querySelector('.card-view-button-grid');
+let cardViewList = document.querySelector('.card-view-button-list');
+let rentCards = document.querySelector('.rent-list');
+
+
+//шрифты и тема 
 
 darkTheme.onclick = function(){
   darkTheme.classList.add('active');
