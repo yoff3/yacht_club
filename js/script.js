@@ -35,3 +35,17 @@ for(let blogArticle of blogArticles){
     blogArticle.classList.remove('short');
   };
 };
+
+//раскладка карточек
+
+cardViewGrid.onclick = function(){
+  cardViewGrid.classList.add('active');
+  cardViewList.classList.remove('active');
+  rentCards.classList.remove('list');
+};
+
+cardViewList.onclick = function() {
+  cardViewGrid.classList.remove('active');
+  cardViewList.classList.add('active');
+  rentCards.classList.add('list');
+};
