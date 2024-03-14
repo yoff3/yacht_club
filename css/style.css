@@ -278,6 +278,118 @@ body{
   line-height: 21px;
 }
 
+/* Вертикальная раскладка карточек списком */
+
+.rent-list.list {
+  flex-direction: column;
+}
+
+.rent-list.list .rent-item {
+  display: flex;
+  width: 1110px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.rent-list.list .rent-item-img {
+  width: 340px;
+  height: 211px;
+  margin: 0;
+  margin-right: 30px;
+  object-fit: cover;
+}
+
+.rent-list.list .rent-item-title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.rent-list.list .specification-list {
+  margin: 0;
+  margin-left: 18px;
+}
+
+.rent-list.list .rent-item-content {
+  margin-right: auto;
+  max-width: 345px;
+}
+
+.rent-list.list .price-info {
+  margin: 0;
+}
+
+.rent-list.list .card-price-name {
+  display: none;
+}
+
+/* стили переключателей раскладки в разделе аренда*/
+
+.rent header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.card-view-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  max-width: 800px;
+  list-style: none;
+}
+
+.card-view-button-grid {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../img/grid.svg");
+  border: 1px solid #00c6bd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-view-button-grid:hover {
+  opacity: 0.5;
+}
+
+.card-view-button-grid:active {
+  opacity: 0.3;
+}
+
+.card-view-button-grid.active {
+  background-image: url("../img/grid-light.svg");
+}
+
+.card-view-button-list {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../img/list.svg");
+  border: 1px solid #00c6bd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-view-button-list:hover {
+  opacity: 0.5;
+}
+
+.card-view-button-list:active {
+  opacity: 0.3;
+}
+
+.card-view-button-list.active {
+  background-image: url("../img/list-light.svg");
+}
+
 .gallery{
   width: 1170px;
   margin: 0 auto;
