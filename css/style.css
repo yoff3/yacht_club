@@ -473,6 +473,15 @@ body{
   margin-bottom: 27px;
 }*/
 
+.gallery-list a.active-item::before {
+  background-color: transparent;
+}
+
+.gallery-main-img {
+  width: 970px;
+  margin-right: 30px;
+}
+
 .news{
   width: 770px;
   margin: 0 auto;
